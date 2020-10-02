@@ -26,9 +26,11 @@ color('black')
 up()
 speed(0)
 goto(110,-110)
+#good on you for using the write function. I didn't know it till now!. - Owen
 write('pajAMAZ ON!', font=style, align='left')
 color('orange')
 
+#this could need a comment. I don't know what this is, or what it does. - Owen
 goto(190,-115)
 pensize(5)
 down()
@@ -42,13 +44,14 @@ fd(8)
 up()
 
 
-
+#same here. This section could need comments so I know what it is and what you're doing. - Owen
 color ("DarkOrange")
 goto(70,180)
 right(180)
 down()
 begin_fill()
 for _ in range(1):
+    #certain parts of this block can be executed with a for loop. - Owen
     back(175)
     left(90)
     fd(25)
@@ -64,8 +67,11 @@ right(90)
 fd(25)
 color('orange')
 
+#again, use more comments so I know what this is. I'm assuming that each block of code is for a different part of the drawing, but that's slightly unclear. - Owen 
 begin_fill()
-for _ in range (1):
+#if this is done only once (range(1)) is it really necessary to have this loop in the first place? - Owen
+for _ in range (1): 
+    #also good on you for abbreviating foward to fd. Saves a ton of time. Well done. - Owen
     fd(15)
     left(45)
     fd(60)
@@ -87,6 +93,7 @@ for _ in range (1):
     fd(50)
 end_fill()
 right(90)
+#it might be easier here to just say white. Why enter all those numbers when you can just type out the words??
 color([255,255,255])
 pensize(10)
 up()
